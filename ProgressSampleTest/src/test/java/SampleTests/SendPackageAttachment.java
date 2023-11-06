@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class SendPackageAttachment extends BaseClass{
 
     @Test
-    void sendPackageAttachment() throws InterruptedException {
+    void sendPackageAttachment() {
         commonMethods.login(driver, constsLP.LOGIN_USERNAME_ID, constsLP.LOGIN_PASSWORD_ID,
                 constsLP.LOGIN_SUBMIT_BUTTON_ID, wait);
 
