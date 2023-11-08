@@ -53,6 +53,13 @@ public class CommonMethods {
         }
         return driver.findElement(By.name(nametag));
     }
+
+    public WebElement getElementLinkText(WebDriver driver, String linkText,@Nullable WebDriverWait wait){
+        if(wait != null){
+            return wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(linkText)));
+        }
+        return driver.findElement(By.linkText(linkText));
+    }
     public void login (WebDriver driver, String usernameLocator, String passwordLocator,
                        String signOnButtonLocator, WebDriverWait wait){
         WebElement usernameField = getElementById(driver, usernameLocator, wait);
