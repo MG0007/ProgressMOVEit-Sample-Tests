@@ -29,6 +29,7 @@ public class TestsLandingPage extends BaseClass {
         WebElement addMailFolderButton = commonMethods.getElementLinkText(driver,
                 constsLP.FOLDER_ADD_MAIL_FOLDER_BUTTON_LINKTEXT, wait);
         addMailFolderButton.click();
+        
         WebElement folderNameField = commonMethods.getElementNameSelector(driver, constsLP.FOLDER_ADD_MAIL_FOLDER_NAME_FIELD_NAMETAG, wait);
         folderNameField.sendKeys(constsLP.FOLDER_NAME);
 
